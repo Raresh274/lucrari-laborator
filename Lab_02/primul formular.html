@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Primul formular</title>
+  </head>
+  <body>
+    <h1>Abonează-te la newsletter</h1>
+
+    <form action="01-primul-formular.html" method="get">
+      <p>
+        <label for="email">Adresa de e-mail*</label>
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <p>
+        <label for="an-studii">Anul de studii</label>
+        <select id="an-studii" name="an-studii" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </p>
+
+      <fieldset>
+        <legend>Cum preferi să primești mesaje?</legend>
+        <label
+          ><input type="radio" name="tip" value="scurta" checked />
+          Săptămânal</label
+        >
+        <label><input type="radio" name="tip" value="lunga" /> Lunar</label>
+        <label
+          ><input type="radio" name="tip" value="cu-lapte" /> Niciodata</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Ce adaugi?</legend>
+        <label
+          ><input type="checkbox" name="extra" value="zahar" checked />
+          Cafea</label
+        >
+        <label
+          ><input type="checkbox" name="extra" value="scortisoara" />
+          Deserturi</label
+        >
+        <label
+          ><input type="checkbox" name="extra" value="frisca" checked />
+          Evenimente</label
+        >
+      </fieldset>
+
+      <button type="submit">Abonează-mă</button>
+    </form>
+  </body>
+</html>

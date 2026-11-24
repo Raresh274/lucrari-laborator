@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Validare</title>
+</head>
+<body>
+    <h1>Creează un cont de student</h1>
+    <form action="#">
+        <p>
+            <label for="nume">Nume complet *</label>
+            <input type="text" id="nume" name="nume" required minlength="3">
+        </p>
+        <p>
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" required placeholder="nume@student.scoală.ro">
+        </p>
+        <p>
+        <label for="parola">Parolă (minim 8 caractere) *</label>
+        <input type="password" id="parola" name="parola" required minlength="8">
+        </p>
+        <p>
+            <label for="confirmare-parola">Confirmă parola *</label>
+            <input type="password" id="confirmare-parola" name="confirmare-parola" required minlength="8">
+        </p>
+        <p>
+            <label for="data-nasterii">Data nașterii *</label>
+            <input type="date" id="data-nasterii" name="data-nasterii" required>    
+        </p>
+        <P>
+            <label for="year">Anul de studiu *</label>
+            <select id="year" name="year" required>
+                <option value="">Selectează anul</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </p>
+        <fieldset>
+        <legend>Cum ai aflat de noi?</legend>
+        <label><input type="radio" name="tip" value="scurta" checked /> Rețele sociale</label>
+        <label><input type="radio" name="tip" value="lunga" /> De la prieteni</label>
+        <label><input type="radio" name="tip" value="cu-lapte" /> Altceva</label>
+      </fieldset>
+      <p>
+  <label>
+    <input type="checkbox" name="termeni" required>
+    Accept termenii și condițiile
+  </label>
+</p>
+        <button type="submit">Creează cont</button>
+    </form>
+    
+</body>
+</html>

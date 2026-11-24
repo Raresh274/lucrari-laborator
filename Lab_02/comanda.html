@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Comandă rapidă</title>
+  </head>
+  <body>
+    <h1>Comandă rapidă</h1>
+    <form action="comanda.html" method="post">
+      <!-- HTML: Câmpul "nume" nu avea atributul name, făcând imposibilă trimiterea valorii către server -->
+      <!-- HTML: Lipsa etichetei <label> asociate direct cu un atribut for pentru câmpul nume -->
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" name="nume" />
+      <br /><br />
+
+      <!-- HTML: Tipul câmpului de e-mail era "text" în loc de "email" -->
+      <!-- HTML: Eticheta <label> pentru e-mail nu avea atributul for="email", iar câmpul nu avea id="email" -->
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" />
+      <br /><br />
+
+      <!-- HTML: Câmpul de telefon folosea type="text" fără label dedicat (avea doar placeholder) -->
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="Telefon" />
+      <br /><br />
+
+      <p>Mărime:</p>
+      <!-- HTML: Butoanele radio aveau atribute name diferite (marime1 și marime2) -->
+      <input type="radio" id="marime_mic" name="marime" value="mic" />
+      <label for="marime_mic">Mic</label>
+
+      <input type="radio" id="marime_mare" name="marime" value="mare" />
+      <label for="marime_mare">Mare</label>
+      <br /><br />
+
+      <!-- HTML: câmpul mesaj avea id="mesajul", dar <label> căuta for="mesaj" -->
+      <label for="mesaj">Mesaj:</label>
+      <input type="text" id="mesaj" name="mesaj" />
+      <br /><br />
+
+      <!-- HTML: Butonul de trimitere se afla în afara etichetei de închidere </form> și nu avea atributul type="submit" -->
+      <button type="submit">Trimite</button>
+    </form>
+  </body>
+</html>

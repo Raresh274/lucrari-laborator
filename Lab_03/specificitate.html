@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Specificitate</title>
+    <style>
+      #meniu a {
+        color: blue;
+      }
+      .link.activ {
+        color: green;
+      }
+      nav a {
+        color: red;
+      }
+      a.activ {
+        color: orange;
+      }
+      :root {
+        --culoare-aurie: #d4af37;
+      }
+      h1,
+      h2,
+      .price-card h3 {
+        color: var(--culoare-aurie);
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .popular-badge {
+        background-color: var(--culoare-aurie);
+        color: #0d0d0d;
+      }
+
+      button {
+        background-color: #ffbb00;
+        box-shadow: 0 4px 12px rgb(212 175 55);
+      }
+      .typing-text {
+        border-right: 3px solid white;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="meniu">
+      <a href="#" class="link activ">Ce culoare am?</a>
+    </nav>
+  </body>
+</html>

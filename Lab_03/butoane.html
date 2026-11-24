@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Butoane</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .buton {
+        display: inline-block;
+        background-color: #6b3e26;
+        color: #ffffff;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 16px;
+        border: 2px solid #6b3e26;
+        cursor: pointer;
+        margin-right: 6px;
+      }
+
+      .buton:hover {
+        background-color: #d9a441;
+        border-color: #d9a441;
+        color: #2b2118;
+      }
+      .buton:focus-visible {
+        outline: 3px solid #2f6db5;
+        outline-offset: 3px;
+      }
+      .buton-secundar {
+        background-color: transparent;
+        color: #6b3e26;
+        border: 2px solid #6b3e26;
+      }
+      .buton-secundar:hover {
+        background-color: #6b3e26;
+        border-color: #6b3e26;
+        color: #ffffff;
+      }
+
+      form {
+        margin-top: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="buton">Vezi meniul</a>
+    <a href="#" class="buton buton-secundar">Sună-ne</a>
+
+    <form action="#">
+      <button type="submit" class="buton">Trimite</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subsol pe coloane</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      main {
+        flex: 1;
+        width: 100%;
+        padding: 30px 40px;
+      }
+
+      footer {
+        background-color: #63391f;
+        color: #ffffff;
+        padding: 30px 40px 20px 40px;
+      }
+
+      .coloane {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .coloane section {
+        flex: 1 1 200px;
+        min-width: 200px;
+      }
+
+      .coloane h3 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+
+      .coloane p {
+        margin: 0;
+        line-height: 1.5;
+        font-size: 14px;
+        color: #e6dcd5;
+      }
+
+      footer a {
+        color: #f39c12;
+        text-decoration: underline;
+      }
+
+      footer a:hover {
+        color: #ffffff;
+      }
+
+      footer hr {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 25px 0 15px 0;
+      }
+
+      .copyright {
+        text-align: center;
+        margin: 0;
+        font-size: 13px;
+        color: #d7ccc8;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Exercițiul 1</h1>
+      <p>
+        Conținutul paginii este scurt, dar subsolul trebuie să stea la baza
+        ferestrei.
+      </p>
+    </main>
+
+    <footer>
+      <div class="coloane">
+        <section>
+          <h3>Program</h3>
+          <p>Luni – Vineri: 8–20<br />Sâmbătă – Duminică: 10–18</p>
+        </section>
+
+        <section>
+          <h3>Contact</h3>
+          <p>0700 000 000<br />salut@aroma.ro</p>
+        </section>
+
+        <section>
+          <h3>Ne găsești și pe</h3>
+          <p><a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+        </section>
+      </div>
+
+      <hr />
+
+      <p class="copyright">© 2026 Cafeneaua Aroma</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3ede4;
+  color: #222222;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #63391f;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.grila-pachete {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.card h2 {
+  color: #63391f;
+  font-size: 20px;
+  margin: 0 0 12px 0;
+}
+
+.pret {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 18px 0;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin: 0 0 25px 0;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #444444;
+}
+.btn-rezerva {
+  margin-top: auto;
+  display: block;
+  text-align: center;
+  background-color: #63391f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-rezerva:hover {
+  background-color: #4a2a16;
+}
+.card.recomandat {
+  position: relative;
+  border: 2px solid #d49b27;
+}
+
+.eticheta {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: #d49b27;
+  color: #222222;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 12px;
+}

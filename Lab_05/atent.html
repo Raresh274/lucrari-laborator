@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librăria Pagina</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #252424;
+      }
+
+      header {
+        background-color: #213854;
+        color: #ffffff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .slogan {
+        display: none;
+        font-size: 13px;
+        font-style: italic;
+        color: #bacce3;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+      }
+
+      nav a {
+        color: #dbe4f0;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      nav a:hover {
+        color: #ffffff;
+      }
+
+      .btn-cos {
+        background-color: #f3b420;
+        color: #223a58;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 6px;
+      }
+
+      .btn-cos:hover {
+        background-color: #d49b15;
+      }
+
+      @media (min-width: 768px) {
+        header {
+          flex-direction: row;
+          padding: 16px 35px;
+          gap: 24px;
+        }
+
+        .slogan {
+          display: block;
+        }
+
+        .btn-cos {
+          margin-left: auto;
+        }
+      }
+
+      main {
+        padding: 35px;
+        max-width: 1000px;
+      }
+
+      main h1 {
+        margin: 0 0 12px 0;
+        font-size: 28px;
+      }
+
+      main p {
+        margin: 0;
+        color: #4c4b4b;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Librăria Pagina</a>
+      <span class="slogan">Cărți bune, cafea caldă</span>
+
+      <nav>
+        <a href="#">Acasă</a>
+        <a href="#">Noutăți</a>
+        <a href="#">Autori</a>
+        <a href="#">Evenimente</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="#" class="btn-cos">Coșul meu</a>
+    </header>
+
+    <main>
+      <h1>Bine ați venit!</h1>
+      <p>Micșorați și măriți fereastra ca să vedeți cum se schimbă antetul.</p>
+    </main>
+  </body>
+</html>

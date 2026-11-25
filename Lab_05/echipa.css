@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ede8df;
+  color: #232323;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #633a21;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.membru {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #673d23;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto 15px auto;
+}
+
+.membru h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+}
+
+.membru p {
+  margin: 0;
+  font-size: 13px;
+  color: #6b6b6b;
+}
+
+.echipa {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .echipa {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  body {
+    padding: 40px;
+  }
+
+  .echipa {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
